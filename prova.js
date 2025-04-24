@@ -1,4 +1,7 @@
 class Personagem {
+    #vida
+    #forca
+    #mana
     constructor(vida, forca, mana, golpe, especial) {
         this.vida = vida;
         this.forca = forca;
@@ -15,25 +18,28 @@ class Mago extends Personagem {
         this.mana = mana
     }
 
-    ataque() {
-        this.ataque += 5
-        console.log('Rajada de magia!')
+    usaraAtaque() {
+        this.ataque += 5;
+        console.log('Rajada de magia!');
     }
 
-    defesa() {
-        this.defesa = 0
-        console.log('Poção de imunidade temporariamente indefinida!')
+    usarDefesa() {
+        this.defesa = 0;
+        console.log('Poção de imunidade temporariamente indefinida!');
     }
 
     manaUsar() {
-        this.mana += 1('unit')
-        console.log('Erga-se!')
+        this.mana += 1; 
+        console.log('Erga-se!');
     }
 
     manaGasta() {
-        if (this.manaUsar)
-            this.mana -= 50
-        console.log('Pouca energia!')
+        if (this.mana >= 50) {
+            this.mana -= 50;
+            console.log('Mana usada!');
+        } else {
+            console.log('Pouca energia!');
+        }
     }
 }
 
@@ -84,3 +90,15 @@ class Arqueiro extends Personagem {
     }
 }
 //Cada classe tem uma função e reação diferente para cada tipo de ataque ou dano recebido.
+
+class P1 {
+    constructor(Mago, Arqueiro, Guerreiro){
+        this.Mago = Mago;
+        this.Arqueiro = Arqueiro;
+        this.Guerreiro = Guerreiro;
+    }
+}
+
+const mago = new Mago('P1', 100, 20, 50, 5, true);
+const guerreiro = new Guerreiro('P1', 120, 30, 10, 20, false);
+const arqueiro = new Arqueiro('P1', 90, 25, 20, 10, true);
