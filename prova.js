@@ -99,6 +99,14 @@ class P1 {
     }
 }
 
+class P2 {
+    constructor(Mago, Arqueiro, Guerreiro){
+        this.Mago = Mago;
+        this.Arqueiro = Arqueiro;
+        this.Guerreiro = Guerreiro;
+    }
+}
+
 const mago = new Mago('P1', 100, 20, 50, 5, true);
 const guerreiro = new Guerreiro('P1', 120, 30, 10, 20, false);
 const arqueiro = new Arqueiro('P1', 90, 25, 20, 10, true);
