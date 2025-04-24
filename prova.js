@@ -9,6 +9,18 @@ class Personagem {
         this.golpe = golpe;
         this.especial = especial;
     }
+
+    get vida (){
+        return this.#vida
+    }
+
+    get forca(){
+        return this.#forca
+    }
+
+    get mana(){
+        return this.#mana
+    }
 }
 
 class Mago extends Personagem {
@@ -107,6 +119,6 @@ class P2 {
     }
 }
 
-const mago = new Mago('P1', 100, 20, 50, 5, true);
-const guerreiro = new Guerreiro('P1', 120, 30, 10, 20, false);
-const arqueiro = new Arqueiro('P1', 90, 25, 20, 10, true);
+const mago = new Mago('P1', 100, 5, 50, 5, true);
+const guerreiro = new Guerreiro('P1', 100, 15, 10, 20, false);
+const arqueiro = new Arqueiro('P1', 100, 10, 10, 10, true);
