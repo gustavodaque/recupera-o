@@ -76,5 +76,11 @@ class Arqueiro extends Personagem {
             this.vida -= 5
         console.log('Raios de defesa!')
     }
+
+    especial(){
+        if(this.especial = true)
+            this.ataque += 22
+        console.log('Flechas divinas!')
+    }
 }
 //Cada classe tem uma função e reação diferente para cada tipo de ataque ou dano recebido.
