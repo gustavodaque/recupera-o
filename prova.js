@@ -62,18 +62,18 @@ class Guerreiro extends Personagem {
         this.golpe = golpe;
     }
     ataque() {
-        this.ataque += 10
-        console.log('Ataque!')
+        this.ataque += 10;
+        console.log('Ataque!');
     }
 
     defesa() {
-        this.vida -= 2
-        console.log('Defesa!')
+        this.vida -= 2;
+        console.log('Defesa!');
     }
 
     golpe() {
-        this.golpe += 20
-        console.log('Golpe!')
+        this.golpe += 20;
+        console.log('Golpe!');
     }
 
 }
@@ -85,20 +85,20 @@ class Arqueiro extends Personagem {
     }
 
     ataque(){
-        this.ataque += 5
-        console.log('Dano!')
+        this.ataque += 5;
+        console.log('Dano!');
     }
 
     defesa(){
         if(this.ataque = false)
-            this.vida -= 5
-        console.log('Raios de defesa!')
+            this.vida -= 5;
+        console.log('Raios de defesa!');
     }
 
     especial(){
         if(this.especial = true)
-            this.ataque += 22
-        console.log('Flechas divinas!')
+            this.ataque += 22;
+        console.log('Flechas divinas!');
     }
 }
 //Cada classe tem uma função e reação diferente para cada tipo de ataque ou dano recebido.
