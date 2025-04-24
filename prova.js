@@ -30,7 +30,7 @@ class Mago extends Personagem {
         this.mana = mana
     }
 
-    usaraAtaque() {
+    usarAtaque() {
         this.ataque += 5;
         console.log('Rajada de magia!');
     }
