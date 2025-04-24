@@ -122,3 +122,5 @@ class P2 {
 const mago = new Mago('P1', 100, 5, 50, 5, true);
 const guerreiro = new Guerreiro('P1', 100, 15, 10, 20, false);
 const arqueiro = new Arqueiro('P1', 100, 10, 10, 10, true);
+const P1 = new P1 = true
+const P2 = new P2 = true
